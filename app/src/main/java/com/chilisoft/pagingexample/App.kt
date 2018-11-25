@@ -51,15 +51,13 @@ class App : Application() {
     }
 
     // SERVICES
-    val authService: ApiService by lazy {
+    val apiService: ApiService by lazy {
         ApiService.create()
     }
 
     override fun onCreate() {
         super.onCreate()
         instance = this
-
-
     }
 
     companion object {

@@ -1,6 +1,6 @@
 package com.chilisoft.pagingexample
 
-import com.chilisoft.pagingexample.model.Article
+import com.chilisoft.pagingexample.model.NewsFeed
 import com.chilisoft.pagingexample.model.BaseResponse
 import retrofit2.Call
 import retrofit2.http.GET
@@ -9,7 +9,7 @@ import retrofit2.http.Query
 interface ApiService {
 
     @GET("everything")
-    fun getNews(@Query("q") name: String, @Query("page") user: Int): Call<BaseResponse<List<Article>>>
+    fun getNews(@Query("q") name: String, @Query("page") user: Int): Call<BaseResponse<List<NewsFeed>>>
 
     companion object {
         fun create(): ApiService {

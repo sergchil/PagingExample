@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:usesCleartextTraffic="true"
         android:name=".App"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
@@ -14,6 +15,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+
+        <!-- https://developers.google.com/maps/documentation/android-sdk/config#specify_requirement_for_apache_http_legacy_library -->
+        <!-- If your app is targeting API level 28 (Android 9.0) or above, you must include the following declaration -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
 
         <activity android:name=".MainActivity">
             <intent-filter>

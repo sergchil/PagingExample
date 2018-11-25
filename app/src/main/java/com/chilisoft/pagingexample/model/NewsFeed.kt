@@ -2,7 +2,7 @@ package com.chilisoft.pagingexample.model
 
 import com.google.gson.annotations.SerializedName
 
-data class Article(
+data class NewsFeed(
         @SerializedName("author")
         val author: String?,
         @SerializedName("content")
