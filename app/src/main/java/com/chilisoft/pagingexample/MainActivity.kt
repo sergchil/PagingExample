@@ -2,6 +2,7 @@ package com.chilisoft.pagingexample
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.recyclerview.extensions.ListAdapter
 import com.chilisoft.pagingexample.ui.feed.FeedFragment
 
 class MainActivity : AppCompatActivity() {
@@ -14,6 +15,8 @@ class MainActivity : AppCompatActivity() {
                     .replace(R.id.container, FeedFragment.newInstance())
                     .commitNow()
         }
+
+
     }
 
 }

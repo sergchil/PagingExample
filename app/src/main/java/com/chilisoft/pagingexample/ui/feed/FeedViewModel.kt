@@ -18,7 +18,7 @@ class FeedViewModel : ViewModel() {
         articlesObservable = getArticles("Armenia", 1)
     }
 
-    fun getArticles(name: String, page: Int = 0): LiveData<List<Article>> {
+    fun getArticles(name: String, page: Int): LiveData<List<Article>> {
 
         val data = MutableLiveData<List<Article>>()
 
